@@ -1,7 +1,7 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: red; icon-glyph: user-md;
-let url_feed = "http://app.thechels.uk/tocfcws.xml";
+let url_feed = "http://thechels.uk/feed/";
 let r = new Request(url_feed);
 let xml = await r.loadString();
 
@@ -20,7 +20,7 @@ console.log(o);
 
 if (config.runsInWidget) {
     // create and show widget
-    let widget = createWidget("ToCFCws latest", `${o}`, "#034694");
+    let widget = createWidget("thechelsuk latest", `${o}`, "#034694");
     Script.setWidget(widget);
     Script.complete();
 }

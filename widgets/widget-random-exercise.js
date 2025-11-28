@@ -1,16 +1,14 @@
-
 let list = [
-"Bodyweight squats",
-"Kettlebell swings",
-"Plank",
-"Kettlebell rows",
-"Walking jacks",
-"Dead bugs",
-"Bench dips",
-"Calf raises",
-"Shadow boxing",
+    "Bodyweight squats",
+    "Kettlebell swings",
+    "Plank",
+    "Kettlebell rows",
+    "Walking jacks",
+    "Dead bugs",
+    "Bench dips",
+    "Calf raises",
+    "Shadow boxing",
 ];
-
 
 // get random item from list and return the string
 function getRandomItem(list) {
@@ -21,7 +19,7 @@ function getRandomItem(list) {
 
 let output = getRandomItem(list);
 
-console.log(output)
+console.log(output);
 
 if (config.runsWithSiri) {
     Speech.speak(output);
