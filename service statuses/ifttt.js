@@ -1,4 +1,4 @@
-let url = "https://www.cloudflarestatus.com"
+let url = "https://status.ifttt.com"
 let r = new Request(url)
 let body = await r.loadString()
 if (config.runsWithSiri) {
